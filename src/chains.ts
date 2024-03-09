@@ -4,10 +4,8 @@ export enum ChainId {
   SEPOLIA = 11155111,
   OPTIMISM = 10,
   OPTIMISM_GOERLI = 420,
-  OPTIMISM_SEPOLIA = 11155420,
   ARBITRUM_ONE = 42161,
   ARBITRUM_GOERLI = 421613,
-  ARBITRUM_SEPOLIA = 421614,
   POLYGON = 137,
   POLYGON_MUMBAI = 80001,
   CELO = 42220,
@@ -15,23 +13,19 @@ export enum ChainId {
   GNOSIS = 100,
   MOONBEAM = 1284,
   BNB = 56,
+  CLASSIC = 61,
+  CLASSIC_MORDOR = 63,
   AVALANCHE = 43114,
   BASE_GOERLI = 84531,
-  BASE = 8453,
-  ZORA = 7777777,
-  ZORA_SEPOLIA = 999999999,
-  ROOTSTOCK = 30,
-  BLAST = 81457
+  BASE = 8453
 }
 
 export const SUPPORTED_CHAINS = [
   ChainId.MAINNET,
   ChainId.OPTIMISM,
   ChainId.OPTIMISM_GOERLI,
-  ChainId.OPTIMISM_SEPOLIA,
   ChainId.ARBITRUM_ONE,
   ChainId.ARBITRUM_GOERLI,
-  ChainId.ARBITRUM_SEPOLIA,
   ChainId.POLYGON,
   ChainId.POLYGON_MUMBAI,
   ChainId.GOERLI,
@@ -39,13 +33,11 @@ export const SUPPORTED_CHAINS = [
   ChainId.CELO_ALFAJORES,
   ChainId.CELO,
   ChainId.BNB,
+  ChainId.CLASSIC,
+  ChainId.CLASSIC_MORDOR,
   ChainId.AVALANCHE,
   ChainId.BASE,
-  ChainId.BASE_GOERLI,
-  ChainId.ZORA,
-  ChainId.ZORA_SEPOLIA,
-  ChainId.ROOTSTOCK,
-  ChainId.BLAST
+  ChainId.BASE_GOERLI
 ] as const
 export type SupportedChainsType = typeof SUPPORTED_CHAINS[number]
 
@@ -57,6 +49,5 @@ export enum NativeCurrencyName {
   GNOSIS = 'XDAI',
   MOONBEAM = 'GLMR',
   BNB = 'BNB',
-  AVAX = 'AVAX',
-  ROOTSTOCK = 'RBTC'
+  AVAX = 'AVAX'
 }
