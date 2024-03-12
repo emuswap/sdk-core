@@ -173,6 +173,27 @@ const BASE_GOERLI_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0x8357227D4eDc78991Db6FDB9bD6ADE250536dE1d'
 }
 
+const ZIRCUIT_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x1d00812F3090953748523b825d3eAed8d1756EB1',
+  multicallAddress: '0xdBa427fCa913f766A66d541E4c5e72DB15b1AbB6',
+  quoterAddress: '0x8fAc1d4Fd93937e2b1Df4D48C84f7254c42bFf0A',
+  v3MigratorAddress: '0xbe013D3F9C91c3DD9Bf6A1e72b3397512D78e213',
+  nonfungiblePositionManagerAddress: '0x8a2f5Bc0b86FB4B33808Ef3863B3b022B466E031',
+  tickLensAddress: '0xdc60638304ABF7bF5a1B68D8691BFD32E4882A2e',
+  swapRouter02Address: '0xD84342DC7ecCc26A0cbE34B86337eE11EFDAC3B6'
+}
+
+// Base Goerli v3 addresses
+const ZIRCUIT_SEPOLIA_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x1d00812F3090953748523b825d3eAed8d1756EB1',
+  multicallAddress: '0xdBa427fCa913f766A66d541E4c5e72DB15b1AbB6',
+  quoterAddress: '0x8fAc1d4Fd93937e2b1Df4D48C84f7254c42bFf0A',
+  v3MigratorAddress: '0xbe013D3F9C91c3DD9Bf6A1e72b3397512D78e213',
+  nonfungiblePositionManagerAddress: '0x8a2f5Bc0b86FB4B33808Ef3863B3b022B466E031',
+  tickLensAddress: '0xdc60638304ABF7bF5a1B68D8691BFD32E4882A2e',
+  swapRouter02Address: '0xD84342DC7ecCc26A0cbE34B86337eE11EFDAC3B6'
+}
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
   [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
@@ -190,7 +211,9 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.SEPOLIA]: SEPOLIA_ADDRESSES,
   [ChainId.AVALANCHE]: AVALANCHE_ADDRESSES,
   [ChainId.BASE]: BASE_ADDRESSES,
-  [ChainId.BASE_GOERLI]: BASE_GOERLI_ADDRESSES
+  [ChainId.BASE_GOERLI]: BASE_GOERLI_ADDRESSES,
+  [ChainId.ZIRCUIT]: ZIRCUIT_ADDRESSES,
+  [ChainId.ZIRCUIT_SEPOLIA]: ZIRCUIT_SEPOLIA_ADDRESSES,
 }
 
 /* V3 Contract Addresses */
